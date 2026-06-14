@@ -1,6 +1,6 @@
 # smbfuse
 
-Mount SMB shares read-only through FUSE using Impacket-style authentication.
+Mount SMB shares through FUSE using Impacket-style authentication.
 
 `smbfuse` is for cases where you want normal filesystem tools (`ls`, `find`,
 `grep`, `cp`, editors, forensic tools) against an SMB share, while keeping the
@@ -85,6 +85,9 @@ Connection options match Impacket names where applicable:
 
 `-ccache` and `-aesKey` imply Kerberos authentication and do not prompt for a
 password.
+
+Use `-ro` / `--read-only` to mount locally read-only even when the SMB
+credentials can write to the share.
 
 Since `smbfuse` runs in the foreground, stop it with `Ctrl-C` when you are done.
 If the mountpoint is left behind after an interrupted session, unmount it with:
