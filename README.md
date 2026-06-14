@@ -86,8 +86,8 @@ Connection options match Impacket names where applicable:
 `-ccache` and `-aesKey` imply Kerberos authentication and do not prompt for a
 password.
 
-Use `-ro` / `--read-only` to mount locally read-only even when the SMB
-credentials can write to the share.
+Use `-read-only` to mount locally read-only even when the SMB credentials can
+write to the share.
 
 Since `smbfuse` runs in the foreground, stop it with `Ctrl-C` when you are done.
 If the mountpoint is left behind after an interrupted session, unmount it with:

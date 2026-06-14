@@ -364,7 +364,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("mountpoint", help="Local mountpoint to create/use")
     parser.add_argument("-share", required=True, help="SMB share name")
     parser.add_argument("-remote-root", default="", help="Remote subdirectory to expose")
-    parser.add_argument("-ro", "--read-only", action="store_true", help="mount read-only and reject local writes")
+    parser.add_argument("-read-only", action="store_true", help="mount read-only and reject local writes")
 
     auth = parser.add_argument_group("authentication")
     auth.add_argument("-hashes", metavar="LMHASH:NTHASH", help="NTLM hashes, format is LMHASH:NTHASH")
