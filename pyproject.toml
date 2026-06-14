@@ -1,0 +1,17 @@
+[project]
+name = "smbfuse"
+version = "0.1.0"
+description = "Mount SMB shares with FUSE using Impacket-style authentication"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fusepy>=3.0.1",
+    "impacket>=0.13.0",
+]
+
+[project.scripts]
+smbfuse = "smbfuse.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
