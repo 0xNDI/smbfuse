@@ -8,7 +8,7 @@ import time
 from dataclasses import dataclass
 from getpass import getpass
 
-from fuse import FUSE, FuseOSError, Operations
+from mfusepy import FUSE, FuseOSError, Operations
 from impacket import nt_errors
 from impacket.examples.utils import parse_target
 from impacket.smb3structs import (

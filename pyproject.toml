@@ -5,7 +5,7 @@ description = "Mount SMB shares with FUSE using Impacket-style authentication"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "fusepy>=3.0.1",
+    "mfusepy>=3.1.1",
     "impacket>=0.13.0",
 ]
 

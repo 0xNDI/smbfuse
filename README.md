@@ -11,11 +11,11 @@ credential flexibility of Impacket's SMB tooling.
 System dependencies on Debian/Kali/Ubuntu:
 
 ```bash
-sudo apt install fuse3 libfuse2
+sudo apt install fuse3
 ```
 
-`libfuse2` is required by `fusepy`; `fuse3` provides userland FUSE tools such as
-`fusermount3` for cleanup.
+`fuse3` provides the libfuse3 library and userland tools such as `fusermount3`.
+`smbfuse` uses `mfusepy`, a fusepy-compatible binding that speaks FUSE 3.
 
 From a git repository:
 
